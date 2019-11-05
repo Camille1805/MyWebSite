@@ -109,7 +109,8 @@ switch ($uc)
 					$fichier="";
 					if(isset($_FILES['photos']))
 					{
-						$fichier = basename($_FILES['photos']['name'][0]);
+					$fichier = basename($_FILES['photos']['name'][0]);
+				
 					 if(move_uploaded_file($_FILES['photos']['tmp_name'][0], "images/".($fichier))) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
 					 {
 					 }

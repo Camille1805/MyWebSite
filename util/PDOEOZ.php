@@ -137,7 +137,7 @@ class PdoSiteEOZ
 	public function AjouterProjet($name,$namenav,$descr,$debut,$fin,$etat,$ordre)
 	{
 		$req = "INSERT INTO `Projet`( `NomNav`, `NomComplet`, `Etat`, `Description`, `AnneeDebut`, `AnneeFin`,Ordre) VALUES ('$namenav','$name','$etat','$descr','$debut','$fin',$ordre)";
-		echo $req;
+		
 		$res = PdoSiteEOZ::$monPdo->query($req);
 	}
 	public function UpdateProjet($name,$namenav,$descr,$debut,$fin,$etat,$id)

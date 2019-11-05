@@ -45,13 +45,13 @@
            		}
            
            ?>
-           	<img class="hide-on-med-and-down"  width="<?php $hauteurdeux; ?>" height="<?php echo $largeurdeux; ?>" src="<?php echo $uneimage["chemin"]; ?>">
-          	<img class="hide-on-large-only"   width="<?php echo $hauteur; ?>" height="<?php echo $largeur; ?>" src="<?php echo $uneimage["chemin"]; ?>">
+           	<img alt="uneimage" class="hide-on-med-and-down"  width="<?php $hauteurdeux; ?>" height="<?php echo $largeurdeux; ?>" src="<?php echo $uneimage["chemin"]; ?>">
+          	<img alt="uneimagelarge" class="hide-on-large-only"   width="<?php echo $hauteur; ?>" height="<?php echo $largeur; ?>" src="<?php echo $uneimage["chemin"]; ?>">
        <?php
            	}
            	else { ?>
 		    <div class="video-container">
-        <iframe width="560" height="315" src="<?php echo $uneimage["chemin"]; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe title="video" width="560" height="315" src="<?php echo $uneimage["chemin"]; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
            	<?php
            	}
@@ -194,13 +194,13 @@ else{
            		}
            
            ?>
-           	<img class="hide-on-med-and-down"  width="<?php $hauteurdeux; ?>" height="<?php echo $largeurdeux; ?>" src="<?php echo $uneimage["chemin"]; ?>">
-          	<img class="hide-on-large-only"   width="<?php echo $hauteur; ?>" height="<?php echo $largeur; ?>" src="<?php echo $uneimage["chemin"]; ?>">
+           	<img alt="uneimage" class="hide-on-med-and-down"  width="<?php $hauteurdeux; ?>" height="<?php echo $largeurdeux; ?>" src="<?php echo $uneimage["chemin"]; ?>">
+          	<img alt="uneimagelarge" class="hide-on-large-only"   width="<?php echo $hauteur; ?>" height="<?php echo $largeur; ?>" src="<?php echo $uneimage["chemin"]; ?>">
        <?php
            	}
            	else { ?>
 		    <div class="video-container">
-        <iframe width="560" height="315" src="<?php echo $uneimage["chemin"]; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe  title="video" width="560" height="315" src="<?php echo $uneimage["chemin"]; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
            	<?php
            	}

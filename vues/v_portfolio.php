@@ -52,7 +52,7 @@
 			    		<div class="center " style="font-size: 1.2em;font-weight: bold;">Langages de programmation</div>
 			    	<br/>
 			    		<div>
-			    			<table class="skillsTab">
+			    			<table table="Tableau des skills" class="skillsTab">
 			    				<?php 
 			    				$leslanguagepgr=$pdo->GetlanguagesProgrammation();
 								Add($leslanguagepgr);
@@ -70,7 +70,7 @@
 			    		<div class="center " style="font-size: 1.2em;font-weight: bold;">Langues</div>
 			    	<br/>
 			    		<div>
-			    			<table class="skillsTab">
+			    			<table table="Tableau des langues" class="skillsTab">
 			    					    				<?php 
 								Add($pdo->Getlanguages());
 			    				?>			    			

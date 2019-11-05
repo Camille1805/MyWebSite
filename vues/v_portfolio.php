@@ -7,7 +7,7 @@
 <style type="text/css">
 	.skill
 	{
-		font-family: open-sans;
+		font-family: open-sans-ms;
 		font-size: 1.5em;
 	}
 

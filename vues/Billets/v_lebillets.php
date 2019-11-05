@@ -12,8 +12,9 @@
           <p><?php echo $lebillet["Contenu"]; ?></p>
                 <?php 
            foreach($lesimages as $uneimage){
+           	$chemin=$uneimage["chemin"];
            	if($uneimage["Video"]==0){
-           		$size=getimagesize($uneimage["chemin"]);
+           		$size=getimagesize($chemin);
            		$hauteur=$size[0];
            		$largeur=$size[1];
          		if($largeur>$hauteur){
@@ -36,13 +37,13 @@
            		}
            
            ?>
-           	<img alt="uneimage" class="hide-on-med-and-down"  width="<?php $hauteurdeux; ?>" height="<?php echo $largeurdeux; ?>" src="<?php echo $uneimage["chemin"]; ?>"></br>
-          	<img alt="uneimagelarge" class="hide-on-large-only"   width="<?php echo $hauteur; ?>" height="<?php echo $largeur; ?>" src="<?php echo $uneimage["chemin"]; ?>">
+           	<img alt="uneimage" class="hide-on-med-and-down"  width="<?php $hauteurdeux; ?>" height="<?php echo $largeurdeux; ?>" src="<?php echo $chemin; ?>"></br>
+          	<img alt="uneimagelarge" class="hide-on-large-only"   width="<?php echo $hauteur; ?>" height="<?php echo $largeur; ?>" src="<?php $chemin; ?>">
        <?php
            	}
            	else { ?>
 		    <div class="video-container">
-        <iframe title="video" width="560" height="315" src="<?php echo $uneimage["chemin"]; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe title="video" width="560" height="315" src="<?php echo $chemin; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
            	<?php
            	}
